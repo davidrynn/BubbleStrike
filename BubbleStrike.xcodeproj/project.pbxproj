@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2290E01C2B680CFC003AF18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E01B2B680CFC003AF18A /* AppDelegate.swift */; };
 		2290E01E2B680CFC003AF18A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2290E01D2B680CFC003AF18A /* GameScene.sks */; };
-		2290E0202B680CFC003AF18A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2290E01F2B680CFC003AF18A /* Actions.sks */; };
 		2290E0222B680CFC003AF18A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0212B680CFC003AF18A /* GameScene.swift */; };
 		2290E0242B680CFC003AF18A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0232B680CFC003AF18A /* GameViewController.swift */; };
 		2290E0272B680CFC003AF18A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0252B680CFC003AF18A /* Main.storyboard */; };
@@ -18,6 +17,26 @@
 		2290E0362B680CFD003AF18A /* BubbleStrikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0352B680CFD003AF18A /* BubbleStrikeTests.swift */; };
 		2290E0402B680CFD003AF18A /* BubbleStrikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E03F2B680CFD003AF18A /* BubbleStrikeUITests.swift */; };
 		2290E0422B680CFD003AF18A /* BubbleStrikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0412B680CFD003AF18A /* BubbleStrikeUITestsLaunchTests.swift */; };
+		2290E0512B680DA2003AF18A /* BubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0502B680DA2003AF18A /* BubbleNode.swift */; };
+		2290E0532B7EA787003AF18A /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0522B7EA787003AF18A /* GroundNode.swift */; };
+		2290E0552B7EAC75003AF18A /* CollisionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0542B7EAC75003AF18A /* CollisionCategory.swift */; };
+		2290E0572B7EB08F003AF18A /* HudNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0562B7EB08F003AF18A /* HudNode.swift */; };
+		2290E0592B7EB097003AF18A /* SideNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E0582B7EB097003AF18A /* SideNode.swift */; };
+		2290E05B2B7EB0B3003AF18A /* PauseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E05A2B7EB0B3003AF18A /* PauseNode.swift */; };
+		2290E05D2B7ECC6A003AF18A /* GameOverNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290E05C2B7ECC6A003AF18A /* GameOverNode.swift */; };
+		2290E05F2B7ED2D8003AF18A /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2290E05E2B7ED2CE003AF18A /* Sprites.atlas */; };
+		2290E0672B7EEEB2003AF18A /* BubbleIntro2wBass.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0642B7EEEB2003AF18A /* BubbleIntro2wBass.m4a */; };
+		2290E0682B7EEEB2003AF18A /* BubbleIntro2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0652B7EEEB2003AF18A /* BubbleIntro2.m4a */; };
+		2290E0692B7EEEB2003AF18A /* BubbleIntro.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0662B7EEEB2003AF18A /* BubbleIntro.m4a */; };
+		2290E06E2B7EEEBB003AF18A /* gameOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2290E06A2B7EEEBB003AF18A /* gameOver.m4a */; };
+		2290E06F2B7EEEBB003AF18A /* bubblePop3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E06B2B7EEEBB003AF18A /* bubblePop3.caf */; };
+		2290E0702B7EEEBB003AF18A /* bubbleSpawn3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E06C2B7EEEBB003AF18A /* bubbleSpawn3.caf */; };
+		2290E0712B7EEEBB003AF18A /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2290E06D2B7EEEBB003AF18A /* gameOver.mp3 */; };
+		2290E0762B7EEECF003AF18A /* tack3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0722B7EEECF003AF18A /* tack3.caf */; };
+		2290E0772B7EEECF003AF18A /* LateNightMix.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0732B7EEECF003AF18A /* LateNightMix.m4a */; };
+		2290E0782B7EEECF003AF18A /* snapBubble.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0742B7EEECF003AF18A /* snapBubble.caf */; };
+		2290E0792B7EEECF003AF18A /* tack5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0752B7EEECF003AF18A /* tack5.caf */; };
+		2290E07B2B7EEF23003AF18A /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2290E07A2B7EEF22003AF18A /* MyParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +60,6 @@
 		2290E0182B680CFC003AF18A /* BubbleStrike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleStrike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2290E01B2B680CFC003AF18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2290E01D2B680CFC003AF18A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2290E01F2B680CFC003AF18A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		2290E0212B680CFC003AF18A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2290E0232B680CFC003AF18A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2290E0262B680CFC003AF18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +70,26 @@
 		2290E03B2B680CFD003AF18A /* BubbleStrikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleStrikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2290E03F2B680CFD003AF18A /* BubbleStrikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleStrikeUITests.swift; sourceTree = "<group>"; };
 		2290E0412B680CFD003AF18A /* BubbleStrikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleStrikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2290E0502B680DA2003AF18A /* BubbleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleNode.swift; sourceTree = "<group>"; };
+		2290E0522B7EA787003AF18A /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
+		2290E0542B7EAC75003AF18A /* CollisionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategory.swift; sourceTree = "<group>"; };
+		2290E0562B7EB08F003AF18A /* HudNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudNode.swift; sourceTree = "<group>"; };
+		2290E0582B7EB097003AF18A /* SideNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNode.swift; sourceTree = "<group>"; };
+		2290E05A2B7EB0B3003AF18A /* PauseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseNode.swift; sourceTree = "<group>"; };
+		2290E05C2B7ECC6A003AF18A /* GameOverNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverNode.swift; sourceTree = "<group>"; };
+		2290E05E2B7ED2CE003AF18A /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		2290E0642B7EEEB2003AF18A /* BubbleIntro2wBass.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro2wBass.m4a; sourceTree = "<group>"; };
+		2290E0652B7EEEB2003AF18A /* BubbleIntro2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro2.m4a; sourceTree = "<group>"; };
+		2290E0662B7EEEB2003AF18A /* BubbleIntro.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BubbleIntro.m4a; sourceTree = "<group>"; };
+		2290E06A2B7EEEBB003AF18A /* gameOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameOver.m4a; sourceTree = "<group>"; };
+		2290E06B2B7EEEBB003AF18A /* bubblePop3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubblePop3.caf; sourceTree = "<group>"; };
+		2290E06C2B7EEEBB003AF18A /* bubbleSpawn3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubbleSpawn3.caf; sourceTree = "<group>"; };
+		2290E06D2B7EEEBB003AF18A /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
+		2290E0722B7EEECF003AF18A /* tack3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack3.caf; sourceTree = "<group>"; };
+		2290E0732B7EEECF003AF18A /* LateNightMix.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = LateNightMix.m4a; sourceTree = "<group>"; };
+		2290E0742B7EEECF003AF18A /* snapBubble.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = snapBubble.caf; sourceTree = "<group>"; };
+		2290E0752B7EEECF003AF18A /* tack5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack5.caf; sourceTree = "<group>"; };
+		2290E07A2B7EEF22003AF18A /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +141,17 @@
 			isa = PBXGroup;
 			children = (
 				2290E01B2B680CFC003AF18A /* AppDelegate.swift */,
-				2290E01D2B680CFC003AF18A /* GameScene.sks */,
-				2290E01F2B680CFC003AF18A /* Actions.sks */,
-				2290E0212B680CFC003AF18A /* GameScene.swift */,
-				2290E0232B680CFC003AF18A /* GameViewController.swift */,
-				2290E0252B680CFC003AF18A /* Main.storyboard */,
 				2290E0282B680CFD003AF18A /* Assets.xcassets */,
+				2290E0542B7EAC75003AF18A /* CollisionCategory.swift */,
+				2290E01D2B680CFC003AF18A /* GameScene.sks */,
+				2290E0212B680CFC003AF18A /* GameScene.swift */,
+				2290E07A2B7EEF22003AF18A /* MyParticle.sks */,
+				2290E0232B680CFC003AF18A /* GameViewController.swift */,
 				2290E02A2B680CFD003AF18A /* LaunchScreen.storyboard */,
+				2290E0252B680CFC003AF18A /* Main.storyboard */,
+				2290E0622B7EEE77003AF18A /* Nodes */,
+				2290E0632B7EEEA2003AF18A /* Sounds */,
+				2290E05E2B7ED2CE003AF18A /* Sprites.atlas */,
 			);
 			path = BubbleStrike;
 			sourceTree = "<group>";
@@ -129,6 +171,37 @@
 				2290E0412B680CFD003AF18A /* BubbleStrikeUITestsLaunchTests.swift */,
 			);
 			path = BubbleStrikeUITests;
+			sourceTree = "<group>";
+		};
+		2290E0622B7EEE77003AF18A /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				2290E0502B680DA2003AF18A /* BubbleNode.swift */,
+				2290E0522B7EA787003AF18A /* GroundNode.swift */,
+				2290E05C2B7ECC6A003AF18A /* GameOverNode.swift */,
+				2290E0562B7EB08F003AF18A /* HudNode.swift */,
+				2290E0582B7EB097003AF18A /* SideNode.swift */,
+				2290E05A2B7EB0B3003AF18A /* PauseNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		2290E0632B7EEEA2003AF18A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2290E0732B7EEECF003AF18A /* LateNightMix.m4a */,
+				2290E0742B7EEECF003AF18A /* snapBubble.caf */,
+				2290E0722B7EEECF003AF18A /* tack3.caf */,
+				2290E0752B7EEECF003AF18A /* tack5.caf */,
+				2290E0662B7EEEB2003AF18A /* BubbleIntro.m4a */,
+				2290E0652B7EEEB2003AF18A /* BubbleIntro2.m4a */,
+				2290E06B2B7EEEBB003AF18A /* bubblePop3.caf */,
+				2290E06C2B7EEEBB003AF18A /* bubbleSpawn3.caf */,
+				2290E06A2B7EEEBB003AF18A /* gameOver.m4a */,
+				2290E06D2B7EEEBB003AF18A /* gameOver.mp3 */,
+				2290E0642B7EEEB2003AF18A /* BubbleIntro2wBass.m4a */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,10 +309,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2290E0272B680CFC003AF18A /* Main.storyboard in Resources */,
+				2290E0702B7EEEBB003AF18A /* bubbleSpawn3.caf in Resources */,
+				2290E0762B7EEECF003AF18A /* tack3.caf in Resources */,
+				2290E0712B7EEEBB003AF18A /* gameOver.mp3 in Resources */,
+				2290E05F2B7ED2D8003AF18A /* Sprites.atlas in Resources */,
+				2290E0782B7EEECF003AF18A /* snapBubble.caf in Resources */,
+				2290E0682B7EEEB2003AF18A /* BubbleIntro2.m4a in Resources */,
+				2290E06F2B7EEEBB003AF18A /* bubblePop3.caf in Resources */,
 				2290E01E2B680CFC003AF18A /* GameScene.sks in Resources */,
 				2290E0292B680CFD003AF18A /* Assets.xcassets in Resources */,
 				2290E02C2B680CFD003AF18A /* LaunchScreen.storyboard in Resources */,
-				2290E0202B680CFC003AF18A /* Actions.sks in Resources */,
+				2290E0692B7EEEB2003AF18A /* BubbleIntro.m4a in Resources */,
+				2290E07B2B7EEF23003AF18A /* MyParticle.sks in Resources */,
+				2290E0672B7EEEB2003AF18A /* BubbleIntro2wBass.m4a in Resources */,
+				2290E0772B7EEECF003AF18A /* LateNightMix.m4a in Resources */,
+				2290E06E2B7EEEBB003AF18A /* gameOver.m4a in Resources */,
+				2290E0792B7EEECF003AF18A /* tack5.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +350,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2290E0222B680CFC003AF18A /* GameScene.swift in Sources */,
+				2290E0512B680DA2003AF18A /* BubbleNode.swift in Sources */,
+				2290E0552B7EAC75003AF18A /* CollisionCategory.swift in Sources */,
 				2290E0242B680CFC003AF18A /* GameViewController.swift in Sources */,
+				2290E0592B7EB097003AF18A /* SideNode.swift in Sources */,
+				2290E05B2B7EB0B3003AF18A /* PauseNode.swift in Sources */,
+				2290E0572B7EB08F003AF18A /* HudNode.swift in Sources */,
+				2290E0532B7EA787003AF18A /* GroundNode.swift in Sources */,
 				2290E01C2B680CFC003AF18A /* AppDelegate.swift in Sources */,
+				2290E05D2B7ECC6A003AF18A /* GameOverNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +542,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KR65ZULS9;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -478,6 +571,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KR65ZULS9;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
