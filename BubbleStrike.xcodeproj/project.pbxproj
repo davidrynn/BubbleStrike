@@ -36,7 +36,7 @@
 		2290E0772B7EEECF003AF18A /* LateNightMix.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0732B7EEECF003AF18A /* LateNightMix.m4a */; };
 		2290E0782B7EEECF003AF18A /* snapBubble.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0742B7EEECF003AF18A /* snapBubble.caf */; };
 		2290E0792B7EEECF003AF18A /* tack5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0752B7EEECF003AF18A /* tack5.caf */; };
-		2290E07B2B7EEF23003AF18A /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2290E07A2B7EEF22003AF18A /* MyParticle.sks */; };
+		2290E07B2B7EEF23003AF18A /* PopParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2290E07A2B7EEF22003AF18A /* PopParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +89,7 @@
 		2290E0732B7EEECF003AF18A /* LateNightMix.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = LateNightMix.m4a; sourceTree = "<group>"; };
 		2290E0742B7EEECF003AF18A /* snapBubble.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = snapBubble.caf; sourceTree = "<group>"; };
 		2290E0752B7EEECF003AF18A /* tack5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack5.caf; sourceTree = "<group>"; };
-		2290E07A2B7EEF22003AF18A /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		2290E07A2B7EEF22003AF18A /* PopParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PopParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 				2290E0542B7EAC75003AF18A /* CollisionCategory.swift */,
 				2290E01D2B680CFC003AF18A /* GameScene.sks */,
 				2290E0212B680CFC003AF18A /* GameScene.swift */,
-				2290E07A2B7EEF22003AF18A /* MyParticle.sks */,
+				2290E07A2B7EEF22003AF18A /* PopParticle.sks */,
 				2290E0232B680CFC003AF18A /* GameViewController.swift */,
 				2290E02A2B680CFD003AF18A /* LaunchScreen.storyboard */,
 				2290E0252B680CFC003AF18A /* Main.storyboard */,
@@ -320,7 +320,7 @@
 				2290E0292B680CFD003AF18A /* Assets.xcassets in Resources */,
 				2290E02C2B680CFD003AF18A /* LaunchScreen.storyboard in Resources */,
 				2290E0692B7EEEB2003AF18A /* BubbleIntro.m4a in Resources */,
-				2290E07B2B7EEF23003AF18A /* MyParticle.sks in Resources */,
+				2290E07B2B7EEF23003AF18A /* PopParticle.sks in Resources */,
 				2290E0672B7EEEB2003AF18A /* BubbleIntro2wBass.m4a in Resources */,
 				2290E0772B7EEECF003AF18A /* LateNightMix.m4a in Resources */,
 				2290E06E2B7EEEBB003AF18A /* gameOver.m4a in Resources */,

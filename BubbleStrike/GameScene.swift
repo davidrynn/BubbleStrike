@@ -111,17 +111,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             if let bubbleNode = node as? BubbleNode, bubbleNode.name == "BubbleNode", !gameOverDisplayed, !scene!.view!.isPaused {
                 bubbleNode.removeFromParent()
                 addPoints(1)
-                
-                if let explosionPath = Bundle.main.path(forResource: "MyParticle", ofType: "sks"), let explosion = NSKeyedUnarchiver.unarchiveObject(withFile: explosionPath) as? SKEmitterNode {
-                    explosion.position = touchPoint
-                    addChild(explosion)
+                if let popNode = SKEmitterNode(fileNamed: "PopParticle") {
+                    popNode.position = touchPoint
+                    addChild(popNode)
                     run(popSFX)
-                    explosion.run(SKAction.wait(forDuration: 2.0), completion: {
-                        explosion.removeFromParent()
+                    popNode.run(SKAction.wait(forDuration: 2.0), completion: {
+                        popNode.removeFromParent()
                     })
                 }
             } else if let groundNode = node as? GroundNode, groundNode.name == "Ground", !gameOverDisplayed {
-                if !scene!.view!.isPaused {
+                if let sceneView = scene?.view, !sceneView.isPaused {
                     performPause()
                 }
             } else if restart {
@@ -227,7 +226,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //    float dy = [Utility randomIntegerBetweenAndIncluding:100 maximum:400];
 //          bubble.physicsBody = SKPhysicsBody()
         
-        let y = self.frame.size.height / 2 + 2*bubble.frame.height+30;
+        let y = self.frame.size.height / 2 + bubble.frame.height+30;
         let max = frame.width / 2
         let min = -max
         let x = CGFloat.random(in: (min + bubble.size.width)...(max - (bubble.frame.width)))
