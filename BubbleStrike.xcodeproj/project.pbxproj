@@ -37,6 +37,7 @@
 		2290E0782B7EEECF003AF18A /* snapBubble.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0742B7EEECF003AF18A /* snapBubble.caf */; };
 		2290E0792B7EEECF003AF18A /* tack5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2290E0752B7EEECF003AF18A /* tack5.caf */; };
 		2290E07B2B7EEF23003AF18A /* PopParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2290E07A2B7EEF22003AF18A /* PopParticle.sks */; };
+		22A541952B8C3D9900A9FAE6 /* RestartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A541942B8C3D9900A9FAE6 /* RestartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		2290E0742B7EEECF003AF18A /* snapBubble.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = snapBubble.caf; sourceTree = "<group>"; };
 		2290E0752B7EEECF003AF18A /* tack5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tack5.caf; sourceTree = "<group>"; };
 		2290E07A2B7EEF22003AF18A /* PopParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PopParticle.sks; sourceTree = "<group>"; };
+		22A541942B8C3D9900A9FAE6 /* RestartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				2290E05C2B7ECC6A003AF18A /* GameOverNode.swift */,
 				2290E0562B7EB08F003AF18A /* HudNode.swift */,
 				2290E0582B7EB097003AF18A /* SideNode.swift */,
+				22A541942B8C3D9900A9FAE6 /* RestartButton.swift */,
 				2290E05A2B7EB0B3003AF18A /* PauseNode.swift */,
 			);
 			path = Nodes;
@@ -355,6 +358,7 @@
 				2290E0242B680CFC003AF18A /* GameViewController.swift in Sources */,
 				2290E0592B7EB097003AF18A /* SideNode.swift in Sources */,
 				2290E05B2B7EB0B3003AF18A /* PauseNode.swift in Sources */,
+				22A541952B8C3D9900A9FAE6 /* RestartButton.swift in Sources */,
 				2290E0572B7EB08F003AF18A /* HudNode.swift in Sources */,
 				2290E0532B7EA787003AF18A /* GroundNode.swift in Sources */,
 				2290E01C2B680CFC003AF18A /* AppDelegate.swift in Sources */,

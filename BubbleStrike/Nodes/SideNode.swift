@@ -11,13 +11,13 @@ final class SideNode: SKSpriteNode {
     
     init(frame: CGRect, isLeft: Bool) {
         let textureForGround: SKTexture = SKTexture(imageNamed: "traditional-tile")
-        super.init(texture: textureForGround, color: .clear, size: CGSize(width: 40, height: frame.height))
+        super.init(texture: textureForGround, color: .clear, size: CGSize(width: 20, height: frame.height))
         if (isLeft) {
             name = "LeftSide"
             position = CGPoint(x: (-frame.width/2), y: 0)
         } else {
             name = "RightSide"
-            position = CGPoint(x: frame.width / 2, y: 0)
+            position = CGPoint(x: (frame.width) / 2, y: 0)
         }
         setupPhysicsBody()
     }
