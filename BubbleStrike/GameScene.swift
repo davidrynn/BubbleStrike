@@ -11,6 +11,11 @@ import AVFoundation
 
 class GameScene: SKScene {
     
+    var lastPoint: CGPoint?
+    var newPoint: CGPoint = CGPoint(x: 100.0, y: 100.0)
+    var line: SKShapeNode?
+
+    
     private var lastUpdateTimeInterval: TimeInterval = 0
     private var timeSinceBubbleAdded: TimeInterval = 0
     private var addBubbleTimeInterval: TimeInterval = 0.5
@@ -152,7 +157,7 @@ class GameScene: SKScene {
             backgroundMusic?.play()
             scene?.view?.isPaused = false
         }
-        
+        deleteLine()
         if let touchedNode = touches.first {
             let touchPoint = touchedNode.location(in: self)
             let node = atPoint(touchPoint)
@@ -160,6 +165,10 @@ class GameScene: SKScene {
                 restart()
                 return
             }
+            
+
+  
+
             popBubbleOnContact(node: node, touchPoint: touchPoint)
             
             if let groundNode = node as? GroundNode, groundNode.name == "Ground", !gameOverDisplayed {
@@ -174,8 +183,27 @@ class GameScene: SKScene {
         if let touchedNode = touches.first {
             let touchPoint = touchedNode.location(in: self)
             let node = atPoint(touchPoint)
+            
+            if let lastPoint {
+                newPoint = touchPoint
+                
+                line = SKShapeNode()
+                let path = CGMutablePath()
+                path.addLines(between: [lastPoint, newPoint])
+                line?.path = path
+                line?.strokeColor = .black
+                line?.lineWidth = 2
+                addChild(line ?? SKShapeNode())
+            }
+            self.lastPoint = newPoint
+ 
+            
             popBubbleOnContact(node: node, touchPoint: touchPoint)
         }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        deleteLine()
     }
     
     func popBubbleOnContact(node: SKNode, touchPoint: CGPoint) {
@@ -191,6 +219,12 @@ class GameScene: SKScene {
                 })
             }
         }
+    }
+    
+    private func deleteLine() {
+        lastPoint = nil
+        line?.removeFromParent()
+        line = nil
     }
     
     // MARK: Game Life Cycle

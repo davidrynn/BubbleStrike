@@ -15,7 +15,7 @@ class RestartNode: SKLabelNode {
         fontName = "Futura-CondensedExtraBold"
         fontColor = .red
         name = "RestartButton"
-        text = "Touch To Restart"
+        text = "Restart"
         fontSize = 22
 
     }
